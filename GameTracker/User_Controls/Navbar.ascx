@@ -8,6 +8,9 @@ Description:  This page contains My Navbar with CSS. --%>
 <nav class="blog-nav" role="navigation">
 <div class="blog-masthead">
     <div class="container">
+        <div class="logo pull-left">
+                    <img src="../Assets/Images/Logo_final.png" />
+                </div>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -16,9 +19,7 @@ Description:  This page contains My Navbar with CSS. --%>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="logo pull-left">
-                    <img src="../Assets/Images/Logo_final.png" />
-                </div>
+            
         </div>
         
         <!-- Collect the nav links, forms, and other content for toggling -->

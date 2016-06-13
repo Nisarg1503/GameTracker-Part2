@@ -7,7 +7,8 @@ Website: http://gametrack.azurewebsites.net
 Description:  This page is my Home page/Default page. --%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <link href="Content/Style.css" rel="stylesheet" />
+    
+    <link href="../Content/Default.css" rel="stylesheet" />
 
                 <h1>Game Lovers </h1>
                 

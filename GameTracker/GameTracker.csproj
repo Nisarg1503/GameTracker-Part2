@@ -76,6 +76,7 @@
     <Content Include="Assets\Images\register.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\App.css" />
+    <Content Include="Content\Default.css" />
     <Content Include="Content\Header.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\PageStyle.css" />

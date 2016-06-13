@@ -9,7 +9,7 @@ Description:  This page contains My Navbar with CSS. --%>
 <div class="blog-masthead">
     <div class="container">
         <div class="logo pull-left">
-                    <img src="../Assets/Images/Logo_final.png" />
+                    <img id="img1" src="../Assets/Images/Logo_final.png" />
                 </div>
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">

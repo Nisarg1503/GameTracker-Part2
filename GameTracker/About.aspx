@@ -22,7 +22,11 @@ Description:  This page contains the information About Us. --%>
         </section>
         <!-- About me Paragraph  -->
         <div class="row">
-            <p> This will be about us page..!!
+            <p> We are providing platform where user can login and we can keep weekly records and statistics on game. 
+                Our main page is provideing weekly records on game and each game will track two teams’ records with score and results of the game. 
+                In game we are showing spectators on the game which is excited part. <br />
+                We are allowing user to choose game and team afrer login in or Registering on our website.
+                hope you enjoy this games.!!
             </p>
         </div>
     </div>

@@ -30,11 +30,20 @@ namespace GameTracker
         {
             switch (Page.Title)
             {
-                case "Home Page":
+                case "Home":
                     home.Attributes.Add("class", "active");
+                    break;
+                case "About":
+                    about.Attributes.Add("class", "active");
+                    break;
+                case "Games":
+                    games.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");
+                    break;
+                case "Login":
+                    login.Attributes.Add("class", "active");
                     break;
 
             }

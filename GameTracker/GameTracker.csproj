@@ -47,11 +47,21 @@
       <HintPath>..\packages\AspNet.ScriptManager.jQuery.2.2.3\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,6 +84,7 @@
     <Content Include="Assets\Images\login.png" />
     <Content Include="Assets\Images\Logo_final.png" />
     <Content Include="Assets\Images\register.png" />
+    <Content Include="Assets\Images\Logo_Back.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\App.css" />
     <Content Include="Content\Default.css" />
@@ -84,12 +95,29 @@
     <Content Include="Default.aspx" />
     <Content Include="Games.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Models\GameTracker.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+      <LastGenOutput>GameTracker.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\GameTracker.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+      <LastGenOutput>GameTracker.cs</LastGenOutput>
+    </Content>
     <Content Include="Register.aspx" />
     <Content Include="Content\Register.css" />
     <Content Include="User_Controls\Navbar.ascx" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <Content Include="Site.Master" />
+    <EntityDeploy Include="Models\GameTracker.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GameTracker.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\GameTracker.edmx.diagram">
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -162,6 +190,27 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Game.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTracker.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTracker.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTracker.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GameTracker.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GameTracker.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Users.cs">
+      <DependentUpon>GameTracker.tt</DependentUpon>
+    </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,7 +234,12 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

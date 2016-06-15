@@ -28,9 +28,9 @@ Description:  This page is my Home page/Default page. --%>
                             <strong>Counter-Strike</strong>
                         </h4>
                         <p><strong>Results :</strong> <br />
-                            Team Army :1
+                            Team Army :21
                             <br />
-                            Team Terrorist :0
+                            Team Terrorist :15
                         </p>
                     </div>
                     <!--Game 2 section-->
@@ -73,9 +73,9 @@ Description:  This page is my Home page/Default page. --%>
                             <strong>Chess</strong>
                         </h4>
                         <p> <strong>Results :</strong> <br />
-                            Team Kings :2
+                            Team Kings :5
                             <br />
-                            Team Queens :3
+                            Team Queens :2
                         </p>
                     </div>
                 </div>

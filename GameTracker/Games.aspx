@@ -22,13 +22,14 @@ Description:  This page will have some game list and information about games --%
             </div>
         </section>
 
-        <div class="col-md-offset-1 col-md-4">
+        <div class="col-md-offset-3 col-md-6">
             <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                 ID="GamesGridView" AutoGenerateColumns="false">
                 <Columns>
                     <asp:BoundField DataField="GameID" HeaderText="Game ID" Visible="false" />
                     <asp:BoundField DataField="GameName" HeaderText="Game Name" Visible="true" />
                     <asp:BoundField DataField="TeamName" HeaderText="Team Name" Visible="true" />
+                    <asp:BoundField DataField="TeamScore" HeaderText="Team Score" Visible="true" />
                     <asp:BoundField DataField="Result" HeaderText="Result" Visible="true" />
                     <asp:BoundField DataField="WeekDate" HeaderText="Week" Visible="true"
                         DataFormatString="{0:MMM dd, yyyy}" />

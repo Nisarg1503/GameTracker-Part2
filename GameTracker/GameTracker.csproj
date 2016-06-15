@@ -81,6 +81,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Assets\Images\battleship.gif" />
+    <Content Include="Assets\Images\Chess.gif" />
+    <Content Include="Assets\Images\Counter-Strike.gif" />
+    <Content Include="Assets\Images\Cricket.gif" />
     <Content Include="Assets\Images\login.png" />
     <Content Include="Assets\Images\Logo_final.png" />
     <Content Include="Assets\Images\register.png" />
@@ -89,6 +93,7 @@
     <Content Include="Content\App.css" />
     <Content Include="Content\Default.css" />
     <Content Include="Content\Header.css" />
+    <Content Include="Content\Home.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\PageStyle.css" />
     <Content Include="Content\Style.css" />

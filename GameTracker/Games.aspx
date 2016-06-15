@@ -4,8 +4,8 @@
 <%--
 File   : Games.aspx
 Author : Nisarg Patel & Jinal Patel
-Website: http://gametrack.azurewebsites.net
-Description:  This page will have some game list and information about games --%>
+Website: http://gametracker-part2.azurewebsites.net/
+Description:  This page has game list and information about game stats with gridview --%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <link href="Content/PageStyle.css" rel="stylesheet" />
@@ -26,6 +26,7 @@ Description:  This page will have some game list and information about games --%
             <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                 ID="GamesGridView" AutoGenerateColumns="false">
                 <Columns>
+                    <!--BoundField to get data from table and show in GridView-->
                     <asp:BoundField DataField="GameID" HeaderText="Game ID" Visible="false" />
                     <asp:BoundField DataField="GameName" HeaderText="Game Name" Visible="true" />
                     <asp:BoundField DataField="TeamName" HeaderText="Team Name" Visible="true" />

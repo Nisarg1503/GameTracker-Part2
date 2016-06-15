@@ -3,7 +3,7 @@
 <%--
 File   : Login.aspx
 Author : Nisarg Patel & Jinal Patel
-Website: http://gametrack.azurewebsites.net
+Website: http://gametracker-part2.azurewebsites.net/
 Description:  This page will allow user to login into site --%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

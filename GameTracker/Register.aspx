@@ -3,7 +3,7 @@
 <%--
 File   : Register.aspx
 Author : Nisarg Patel & Jinal Patel
-Website: http://gametrack.azurewebsites.net
+Website: http://gametracker-part2.azurewebsites.net/
 Description:  This page will allow users to Register by providing some personal information --%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -37,6 +37,6 @@ Description:  This page will allow users to Register by providing some personal 
 			</form>
 		</div>
             </div> 
-        </div>
+        
 	</main>
 </asp:Content>

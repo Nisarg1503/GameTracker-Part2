@@ -26,7 +26,7 @@ Description:  This page has game list and information about game stats with grid
             <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover"
                 ID="GamesGridView" AutoGenerateColumns="false">
                 <Columns>
-                    <!--BoundField to get data from table and show in GridView-->
+                    
                     <asp:BoundField DataField="GameID" HeaderText="Game ID" Visible="false" />
                     <asp:BoundField DataField="GameName" HeaderText="Game Name" Visible="true" />
                     <asp:BoundField DataField="TeamName" HeaderText="Team Name" Visible="true" />
